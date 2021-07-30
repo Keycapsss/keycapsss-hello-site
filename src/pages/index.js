@@ -25,12 +25,23 @@ function IndexPage() {
           <li className="mb-4">
             <a
               className="relative block py-4 font-bold text-center transition duration-200 bg-transparent border-2 border-white rounded-lg hover:bg-white hover:bg-opacity-25 w-100 hover:border-opacity-50 hover:text-green-500 md:px-12"
+              href="https://keycapsss.com"
+              alt="Keycapsss Shop"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              🛒 Shop
+            </a>
+          </li>
+          <li className="mb-4">
+            <a
+              className="relative block py-4 font-bold text-center transition duration-200 bg-transparent border-2 border-white rounded-lg hover:bg-white hover:bg-opacity-25 w-100 hover:border-opacity-50 hover:text-green-500 md:px-12"
               href="https://discord.gg/pSUHWfJNmp"
               alt="Keycapsss Discord Server"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Discord
+              💬 Discord
             </a>
           </li>
           <li className="mb-4">
@@ -41,7 +52,7 @@ function IndexPage() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Instagram
+              📷 Instagram
             </a>
           </li>
           <li className="mb-4">
@@ -52,7 +63,7 @@ function IndexPage() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Youtube
+              📼 Youtube
             </a>
           </li>
         </ul>
