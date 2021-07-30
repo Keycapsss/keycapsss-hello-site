@@ -1,39 +1,35 @@
 import PropTypes from "prop-types";
 import React from "react";
 
-import Header from "./header";
+// import Header from "./header";
 
 function Layout({ children }) {
   return (
-    <div className="flex flex-col min-h-screen font-sans text-gray-900">
-      <Header />
+    <div className="relative min-h-screen font-sans text-white bg-gradient-to-br from-green-200 via-green-400 to-green-500">
+      <main className="container px-4 py-12 mx-auto">{children}</main>
 
-      <main className="flex-1 w-full max-w-4xl px-4 py-8 mx-auto md:px-8 md:py-16">
-        {children}
-      </main>
-
-      <footer className="bg-blue-700">
+      <footer className="font-mono opacity-60">
         <nav className="flex justify-between max-w-4xl p-4 mx-auto text-sm md:p-8">
-          <p className="text-white">
-            Created by{` `}
-            <a
-              className="font-bold no-underline"
-              href="https://bryant.io"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Taylor Bryant
-            </a>
-          </p>
+          <p className=""></p>
 
           <p>
+            Created with&nbsp;
             <a
-              className="font-bold text-white no-underline"
-              href="https://github.com/taylorbryant/gatsby-starter-tailwind"
+              className="font-bold no-underline uppercase"
+              href="https://tailwindcss.com"
               target="_blank"
               rel="noopener noreferrer"
             >
-              GitHub
+              TailwindCSS
+            </a>
+            &nbsp;&amp;&nbsp;
+            <a
+              className="font-bold no-underline uppercase"
+              href="https://www.gatsbyjs.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Gatsby
             </a>
           </p>
         </nav>
