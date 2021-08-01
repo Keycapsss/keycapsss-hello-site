@@ -5,8 +5,8 @@ const fullConfig = resolveConfig(tailwindConfig);
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Tailwind`,
-    description: `Gatsby starter styled with Tailwind`,
+    title: `Keycapsss Social Link Page`,
+    description: `Keycapsss Linktree social media page.`,
     author: `@taylorbryant`,
   },
   plugins: [
