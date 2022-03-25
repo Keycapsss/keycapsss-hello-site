@@ -36,6 +36,17 @@ function IndexPage() {
           <li className="mb-4">
             <a
               className="relative block py-4 font-bold text-center transition duration-200 bg-transparent border-2 border-white rounded-lg hover:bg-white hover:bg-opacity-25 w-100 hover:border-opacity-50 hover:text-green-500 md:px-12"
+              href="https://keycapsss.com/help"
+              alt="Build-Guides & News Board"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              🔧 Build-Guides & News Board
+            </a>
+          </li>
+          <li className="mb-4">
+            <a
+              className="relative block py-4 font-bold text-center transition duration-200 bg-transparent border-2 border-white rounded-lg hover:bg-white hover:bg-opacity-25 w-100 hover:border-opacity-50 hover:text-green-500 md:px-12"
               href="https://discord.gg/pSUHWfJNmp"
               alt="Keycapsss Discord Server"
               target="_blank"
@@ -64,6 +75,17 @@ function IndexPage() {
               rel="noopener noreferrer"
             >
               📼 Youtube
+            </a>
+          </li>
+          <li className="mb-4">
+            <a
+              className="relative block py-4 font-bold text-center transition duration-200 bg-transparent border-2 border-white rounded-lg hover:bg-white hover:bg-opacity-25 w-100 hover:border-opacity-50 hover:text-green-500 md:px-12"
+              href="https://github.com/Keycapsss"
+              alt="Keycapsss Github"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              💾 Github
             </a>
           </li>
         </ul>
