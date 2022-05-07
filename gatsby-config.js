@@ -7,10 +7,9 @@ module.exports = {
   siteMetadata: {
     title: `Keycapsss Social Link Page`,
     description: `Keycapsss Linktree social media page.`,
-    author: `@taylorbryant`,
+    author: `@keycapsss`,
   },
   plugins: [
-    `gatsby-plugin-eslint`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-manifest`,

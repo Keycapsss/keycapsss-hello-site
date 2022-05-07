@@ -1,8 +1,8 @@
 {
   "name": "gatsby-starter-tailwind",
-  "description": "Gatsby starter styled with Tailwind",
-  "version": "5.0.0",
-  "author": "Taylor Bryant <taylor@bryant.io>",
+  "description": "Keycapsss Link Site",
+  "version": "1.0.0",
+  "author": "BenRoe",
   "dependencies": {
     "gatsby": "2.32.12",
     "gatsby-plugin-manifest": "2.12.1",
