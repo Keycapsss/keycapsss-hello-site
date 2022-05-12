@@ -20,7 +20,7 @@ module.exports = {
         background_color: fullConfig.theme.colors.white,
         theme_color: fullConfig.theme.colors.green["500"],
         display: `minimal-ui`,
-        icon: `src/images/keycapsss-k-logo.svg`,
+        icon: `src/images/favicon.svg`,
       },
     },
     {
