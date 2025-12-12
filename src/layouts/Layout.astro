@@ -1,0 +1,63 @@
+---
+interface Props {
+  title?: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>
+      {title ? `${title} | Keycapsss` : "Keycapsss Social Link Page"}
+    </title>
+  </head>
+  <body>
+    <div
+      class="relative min-h-screen font-sans text-white bg-gradient-to-br from-green-200 via-green-400 to-green-500"
+    >
+      <main class="container px-4 py-12 mx-auto">
+        <slot />
+      </main>
+
+      <footer class="font-mono opacity-60">
+        <nav
+          class="flex justify-between max-w-4xl p-4 mx-auto text-sm md:p-8"
+        >
+          <p></p>
+
+          <p>
+            Created with&nbsp;
+            <a
+              class="font-bold no-underline uppercase"
+              href="https://tailwindcss.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              TailwindCSS
+            </a>
+            &nbsp;&amp;&nbsp;
+            <a
+              class="font-bold no-underline uppercase"
+              href="https://astro.build"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Astro
+            </a>
+          </p>
+        </nav>
+      </footer>
+    </div>
+  </body>
+</html>
+
+<style is:global>
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+</style>

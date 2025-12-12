@@ -1,0 +1,39 @@
+name: 🚀 Build and deploy Astro
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch: # Allows manual trigger
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0 # Not needed if lastUpdated is not enabled
+
+      - name: Setup Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Lint code
+        run: npm run analyze
+
+      - name: Build with Astro
+        run: npm run build
+
+      - name: Deploy to dist branch
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          publish_branch: dist
+          force_orphan: true # Keeps the dist branch clean without history

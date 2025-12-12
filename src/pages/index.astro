@@ -1,0 +1,95 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+const title = "Home";
+const description = "Keycapsss Linktree social media page.";
+const keywords = ["keycapsss", "mechanical", "keyboard", "shop"];
+---
+
+<Layout title={title}>
+  <head>
+    <meta name="description" content={description} />
+    <meta name="keywords" content={keywords.join(", ")} />
+    <meta property="og:title" content={`${title} | Keycapsss Social Link Page`} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:creator" content="@keycapsss" />
+  </head>
+
+  <div class="w-full mx-auto md:w-4/5 lg:w-3/6">
+    <img
+      alt="Keycapsss Logo"
+      class="block w-3/4 px-2 mx-auto mb-1"
+      src="/keycapsss-logo.svg"
+      width="200"
+      height="200"
+    />
+    <p class="px-12 mb-8 font-mono font-light text-center sm:px-0">
+      Mechanical Keyboard Shop based in Germany.
+    </p>
+
+    <ul>
+      <li class="mb-4">
+        <a
+          class="relative block py-4 font-bold text-center transition duration-200 bg-transparent border-2 border-white rounded-lg hover:bg-white hover:bg-opacity-25 w-100 hover:border-opacity-50 hover:text-green-500 md:px-12"
+          href="https://keycapsss.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          🛒 Shop
+        </a>
+      </li>
+      <li class="mb-4">
+        <a
+          class="relative block py-4 font-bold text-center transition duration-200 bg-transparent border-2 border-white rounded-lg hover:bg-white hover:bg-opacity-25 w-100 hover:border-opacity-50 hover:text-green-500 md:px-12"
+          href="https://help.keycapsss.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          🔧 Build-Guides & News Board
+        </a>
+      </li>
+      <li class="mb-4">
+        <a
+          class="relative block py-4 font-bold text-center transition duration-200 bg-transparent border-2 border-white rounded-lg hover:bg-white hover:bg-opacity-25 w-100 hover:border-opacity-50 hover:text-green-500 md:px-12"
+          href="https://discord.gg/pSUHWfJNmp"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          💬 Discord
+        </a>
+      </li>
+      <li class="mb-4">
+        <a
+          class="relative block py-4 font-bold text-center transition duration-200 bg-transparent border-2 border-white rounded-lg hover:bg-white hover:bg-opacity-25 w-100 hover:border-opacity-50 hover:text-green-500 md:px-12"
+          href="https://www.instagram.com/keycapsss_com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          📷 Instagram
+        </a>
+      </li>
+      <li class="mb-4">
+        <a
+          class="relative block py-4 font-bold text-center transition duration-200 bg-transparent border-2 border-white rounded-lg hover:bg-white hover:bg-opacity-25 w-100 hover:border-opacity-50 hover:text-green-500 md:px-12"
+          href="https://www.youtube.com/channel/UCWV1bYERG7nmReykqa47LeA"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          📼 Youtube
+        </a>
+      </li>
+      <li class="mb-4">
+        <a
+          class="relative block py-4 font-bold text-center transition duration-200 bg-transparent border-2 border-white rounded-lg hover:bg-white hover:bg-opacity-25 w-100 hover:border-opacity-50 hover:text-green-500 md:px-12"
+          href="https://github.com/Keycapsss"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          💾 Github
+        </a>
+      </li>
+    </ul>
+  </div>
+</Layout>
