@@ -22,3 +22,4 @@ yarn-error.log
 .pnp/
 .pnp.js
 .yarn-integrity
+.claude/settings.local.json
