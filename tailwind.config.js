@@ -2,12 +2,6 @@
 import forms from "@tailwindcss/forms";
 
 export default {
-  content: [],
-  // Astro integration handles content configuration automatically
-  // https://docs.astro.build/en/guides/integrations-guide/tailwind/
-  safelist: [
-    // This allows Astro's Tailwind integration to work while suppressing the warning
-    { pattern: /.*/ },
-  ],
+  content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   plugins: [forms],
 };
