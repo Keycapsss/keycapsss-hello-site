@@ -19,8 +19,9 @@
   "license": "MIT",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "astro check && astro build",
     "preview": "astro preview",
+    "check": "astro check",
     "analyze:prettier": "prettier --list-different \"**/*.{css,js,astro,json,md}\"",
     "analyze:eslint": "eslint .",
     "analyze": "npm run analyze:prettier && npm run analyze:eslint",
@@ -29,6 +30,7 @@
     "fix": "npm run fix:prettier && npm run fix:eslint"
   },
   "devDependencies": {
+    "@astrojs/check": "^0.9.6",
     "@typescript-eslint/parser": "^8.49.0",
     "autoprefixer": "10.4.7",
     "cssnano": "5.1.7",
@@ -36,6 +38,7 @@
     "eslint-plugin-astro": "^1.5.0",
     "postcss": "8.4.13",
     "prettier": "^3.7.4",
-    "prettier-plugin-astro": "^0.14.1"
+    "prettier-plugin-astro": "^0.14.1",
+    "typescript": "^5.9.3"
   }
 }
