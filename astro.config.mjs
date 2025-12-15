@@ -1,12 +1,9 @@
-import { defineConfig } from 'astro/config';
-import tailwind from '@astrojs/tailwind';
+import { defineConfig } from "astro/config";
+import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
-  integrations: [
-    tailwind({
-      // Using custom CSS file with @layer components
-      applyBaseStyles: false,
-    }),
-  ],
-  outDir: './dist',
+  vite: {
+    plugins: [tailwindcss()],
+  },
+  outDir: "./dist",
 });
